@@ -1,5 +1,6 @@
 class ReferencesController < ApplicationController
  def new
+  @reference = Reference.new
  end
  def index
  end
