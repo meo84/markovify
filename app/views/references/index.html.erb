@@ -1,1 +1,6 @@
 <h2>Text references</h2>
+<ul>
+  <% @references.each do |ref| %>
+    <li><%= ref.content %></li>
+  <% end %>
+</ul>

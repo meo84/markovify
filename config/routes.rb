@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
  root 'welcome#index'
- get 'upload' => 'references#new'
  get 'references' => 'references#index' 
+ get 'upload' => 'references#new'
+ post 'references' => 'references#create'
  get 'generate' => 'references#generate'
 
   # You can have the root of your site routed with "root"
